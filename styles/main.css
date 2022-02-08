@@ -7,6 +7,9 @@ body{
     padding-left: 15px;
     padding-right: 15px;
 }
+header{
+    border-bottom: 1px solid #dedede;
+}
 .header{
     font-family: 'Open Sans', sans-serif;
     display: flex;
@@ -26,7 +29,7 @@ body{
 .header-nav{
     display: flex;
     list-style-type: none;
-    padding-left: 0;
+    padding-right: 137px;
     gap: 46px;
 }
 .header-nav a{
@@ -34,6 +37,9 @@ body{
     font-size: 20px;
     color: #443737;
     text-decoration: none;
+}
+.header-nav a:hover{
+    color: #ffc725;
 }
 .header-nav a::after{
     content: '';
@@ -53,6 +59,7 @@ body{
     border: none;
     padding: 0;
     gap: 10px;
+    cursor: pointer;
 }
 .button-item{
     position: relative;
@@ -83,6 +90,7 @@ body{
     background-size: cover;
     background-position: center center;
     padding: 142px 0;
+    margin-bottom: 140px;
 }
 .breadcrumbs{
     padding-left: 0;
@@ -90,7 +98,7 @@ body{
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap:16px;
+    gap:8px;
 }
 .breadcrumbs a{
     font-family: 'Open Sans', sans-serif;
@@ -98,10 +106,17 @@ body{
     font-size: 15px;
     text-decoration: none;
 }
+.breadcrumbs a:hover{
+    color: #ffc725;
+}
+.breadcrumbs a:hover::before{
+    color: #dedede;
+}
 .breadcrumbs a::before{
     content: '/';
     position: relative;
-    left: -7px;
+    left: -3px;
+    pointer-events: none;
 }
 .breadcrumbs li:first-child a::before{
     display: none;
@@ -110,7 +125,7 @@ body{
     font-weight: 700;
     font-size: 79px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 22px;
 }
 .description{
     font-family: 'Open Sans', sans-serif;
@@ -119,4 +134,60 @@ body{
     color: #faf9f9;
     max-width: 320px;
     margin:0 auto;
+}
+.banner{
+    margin-top: 20px;
+}
+.banner-box{  
+    background-image: url(../image/banner.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 93px ;
+    padding-left: 99px;
+}
+.banner-title{
+    font-size: 60px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.banner-title span{
+    display: block;
+    max-width: 95px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px 0;
+    background-color: #F37335;
+    border-radius: 14px;
+    text-align: center;
+    margin-bottom: -8px;
+    margin-top:5px;
+}
+.banner-text{
+    max-width: 353px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color:  #FAF9F9;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+.banner-link{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    color: #1E2F40;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 27px;
+    background: #FBB731;
 }
