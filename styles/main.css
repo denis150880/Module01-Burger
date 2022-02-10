@@ -225,7 +225,7 @@ header{
 .menu-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr) ;
-    gap: 20px;
+    gap:  20px;
     text-align: center;
 }
 .menu-grid-cover{
@@ -286,4 +286,63 @@ header{
 .menu-header-bottom{
     padding-top: 69px;
 }    
-   
+/*Подвал*/   
+.footer {
+    background: #1E2F40;
+    color: #fff;
+    padding-top: 117px;
+    padding-bottom: 106px;
+    margin-top: 111px;
+}
+.footer-box{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo {
+    width: 63px;
+    height: 56px;
+}
+.footer-item {
+    flex: 0 0 auto;
+}
+.footer-item h2 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+    margin-top: 0;
+    padding-left: 12px
+}
+.footer-item li {
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #FAF9F9;
+    font-weight: 700;
+    line-height: 24px;
+}
+.footer-item a {
+    color: #DEDEDE;
+    text-decoration: none;
+    font-weight: 400;
+}
+.footer-item span {
+    color: #DEDEDE;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+.footer-tel ul {
+    font-weight: 900;
+    font-size: 20px;
+    color: #FBB731;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+.footer-tel li {
+    margin-bottom: 16px;
+}
+.footer-list{
+    padding-left: 0;
+    list-style-type: none;
+}
