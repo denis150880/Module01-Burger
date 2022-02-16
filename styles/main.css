@@ -150,7 +150,7 @@ header{
     background-size: cover;
     background-position: center center;
     padding: 89px 100px 120px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 .banner-title{
     font-size: 60px;
@@ -197,10 +197,14 @@ header{
     padding: 19px 25px;
     background: #FBB731;
     border: 1px solid #FBB731;
+    transition: 0.3s;
 }
 .banner-link:hover{
     background-color: transparent;
     color: #FBB731;;
+}
+.menu{
+    padding-top: 20px;
 }
 .menu-header{
     display: flex;
@@ -280,6 +284,7 @@ header{
     gap: 10px;
     margin: 0 auto;
     margin-bottom: 28px;
+    transition: 0.3s;
 }
 .menu-grid-btn:hover{
     background-color: #F37335;
@@ -367,6 +372,31 @@ header{
 }
 .footer-list a:hover{
     color: #FBB731;
+}
+.button-up{
+    background-color: #FBB731;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color:  #1E2F40;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    transition: 1s;
+}
+button-up:hover{
+    background-color: #F37335;
+}
+.button-up.hidden{
+    opacity: 0;
+}
+.button-up.visible{
+    opacity: 1;
 }
 /*Style INDEX*/
 .main {
