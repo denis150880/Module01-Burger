@@ -290,6 +290,7 @@ header{
     line-height: 18px;
     color:  #1E2F40;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .menu-grid-icom{
     background-image: url(../image/cart-menu.svg);
