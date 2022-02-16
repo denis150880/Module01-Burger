@@ -148,7 +148,7 @@ header{
     background-image: url(../image/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: 0 center;
     padding: 89px 100px 120px;
     margin-bottom: 80px;
 }
@@ -243,6 +243,15 @@ header{
     gap:  20px;
     text-align: center;
 }
+/*Изменения*/
+.menu-grid-blok{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    gap:  20px;
+    text-align: center;
+}
+
+
 .menu-grid-cover{
     width: 100%;
     height: 430px;
@@ -522,4 +531,42 @@ button-up:hover{
     font-weight: 700;
     margin-bottom: 10px;
     margin-top: 0;
+}
+
+/*Responsive*/
+@media(max-width:1000px){
+    .container{
+        max-width: 738px;
+    }   
+    .header-logo{
+        width: 150px;
+        height: 48px;
+        background-size: contain;
+    } 
+    .header-nav{
+        gap: 22px;
+    }
+    .header-item{
+        flex-basis: 75.5%;
+    }
+    .bg{
+       margin-bottom: 72px; 
+    }
+    .banner-box{  
+        background-position: -80 center;
+        padding: 89px 40px 120px;   
+    }
+    .menu-grid{
+        grid-template-columns: repeat(2, 1fr) ;
+        gap:50px 15px;
+    }
+    .footer-box{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            height: 100%;     
+    }
+    .footer-tel{
+        margin-left: 140px;
+    }
 }
