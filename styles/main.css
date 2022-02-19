@@ -611,6 +611,15 @@ button-up:hover{
         gap: 21px;
     }
 }
+@media(max-width:569px){
+    .menu-other .menu-grid{
+        display: flex;
+        width: auto;  
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding-bottom: 70px;
+    }
+}
 
 @media(max-width: 567px){
     .breadcrumbs{
