@@ -34,8 +34,7 @@ header{
 }
 .header-nav{
     display: flex;
-    list-style-type: none;
-    
+    list-style-type: none; 
     gap: 46px;
 }
 .header-nav a{
@@ -686,7 +685,7 @@ button-up:hover{
     border: none;
     cursor: pointer;
 }
-.modal{
+#modal{
     background-color: #fff8dc;
     max-width: 500px;
     text-align: center;
