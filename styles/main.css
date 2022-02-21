@@ -690,6 +690,8 @@ header{
     .menu-titel {
         margin: -12px;
         margin-bottom: 25px;
+        padding-top: 8px;
+        font-size: 37px;
     }
     .menu-select {
         background-position: 90% center;
@@ -933,32 +935,7 @@ header{
     .footer {
         margin-top: 0;
     }
-    /* footer responsive */
-    /*
-    .footer {
-        margin-top: 47px;
-    }
-    .footer-item h2{
-        margin-top: 31px;
-        font-size: 18px;
-    }
-    .footer-tel-mob {
-        display: none;
-    }
-    .footer-list + .footer-list-tel {
-        display: none;
-    }
-    .footer-list {
-        margin-bottom: 10px;
-    }
-    .footer-item .footer-tel {
-        display: block;
-        font-size: 20px;
-    }
-    .footer-item-logo {
-        display: flex;
-        justify-content: space-between
-    }*/
+
 }
 @media (max-width: 320px) {
     .banner-box {
