@@ -773,6 +773,10 @@ header{
     }
 }
 
+@media(max-width:569px){
+    padding-bottom: 50px;
+}
+
 @media (max-width: 567px) {
     .title {
         font-size: 38px;
@@ -919,7 +923,7 @@ header{
         margin-bottom: 36px;
     }
     .menu-other {
-        height: 410px;;
+        height: 450px;;
     }
     .menu-other .menu-grid-item {
         flex: 0 0 140px;
@@ -940,5 +944,9 @@ header{
 @media (max-width: 320px) {
     .banner-box {
         background-position: 25% center;
+    }
+    .menu-other .menu-grid{
+        padding-bottom: 20px
+    }
     }
 }
