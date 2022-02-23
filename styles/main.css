@@ -93,7 +93,7 @@ header{
 .bg{
     text-align: center;
     color: #fff;
-    background-image: url(../image/bg.jpg.jpg);
+    background-image: url(../image/bg.jpg);
     background-size: cover;
     background-position: center center;
     padding: 142px 0;
@@ -231,7 +231,9 @@ header{
     border-radius: 22px;
     color: #443737;
     font-size: 15px;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     flex-basis: 279px;
     background-image: url(../image/arrow.svg);
     background-size: 12.79px 7.75px;
@@ -259,7 +261,8 @@ header{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     height: 430px; 
     
@@ -692,6 +695,7 @@ header{
         margin-bottom: 25px;
         padding-top: 8px;
         font-size: 37px;
+        margin: 0;
     }
     .menu-select {
         background-position: 90% center;
@@ -713,10 +717,12 @@ header{
         margin-bottom: -15px;
     }
     .menu-other{
+
         height: 559px;
     }
     .menu-other .menu-titel{
         height: 70px;
+        font-weight: 29px;
     }
     .menu-other .menu-item{
         flex: 0 0 267px;
@@ -735,6 +741,7 @@ header{
     }
     .menu-other .container {
         padding-right: 0;
+        margin-right: 14px;
     }
 }
 @media (max-width: 650px) {
@@ -796,6 +803,10 @@ header{
         background-position: 17% center;
         margin-bottom: 40px;
     }
+    .banner-text {
+        max-width: 270px;
+        font-size: 17px;
+    }
     .header {
         padding-top: 19px;
         padding-bottom: 19px;
@@ -812,6 +823,7 @@ header{
         padding: 13px 24px 13px 15px;
         flex-basis: 136px;
         background-position: 91% center;
+        margin-bottom: 0;
     }
     .menu-header {
         margin-bottom: 30px;
@@ -821,7 +833,7 @@ header{
     }
     .menu-other {
         margin-top: 40px;
-        height: 480px;
+        height: 446px;
     }
     .menu-other .menu-grid-cover {
         max-height: 200px;
@@ -853,6 +865,15 @@ header{
         margin-top: 0;
     }
 }
+
+@media (max-width: 500px) {
+    .banner-text {
+        max-width: 265px;
+        font-size: 16px;
+    }
+
+}
+
 @media (max-width: 360px) {
     .header-logo {
         width: 116px;
@@ -932,6 +953,9 @@ header{
     .menu-other .menu-grid-cover img {
         height: 180px;
     }
+    .menu-titel {
+        font-size: 33px;
+    }
     .menu-other .menu-grid {
         gap: 22px 5px;
         padding-bottom: 74px;
@@ -945,8 +969,25 @@ header{
     .banner-box {
         background-position: 25% center;
     }
+    .menu-other {
+        margin-top: 40px;
+        height: 363px;
+    }
     .menu-other .menu-grid{
         padding-bottom: 20px
     }
+    .menu-other .menu-titel {
+        height: 20px;
+        font-size: 29px;
+    }
+    .menu-titel {
+        font-size:25px;
+    }
+    .menu-select {
+        font-size: 12px;
+        padding: 6px 26px 6px 14px;
+        flex-basis: 136px;
+        background-position: 89% center;
+        margin-bottom: 0;
     }
 }
